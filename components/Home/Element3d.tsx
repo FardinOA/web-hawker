@@ -15,7 +15,7 @@ const Element3d = ({
   duration: number;
   scrollYProgress: MotionValue;
 }) => {
-  const y = useTransform(scrollYProgress, [0, 1], [-610, 310], {
+  const y = useTransform(scrollYProgress, [0, 1], [-510, 310], {
     clamp: false,
   });
 
@@ -35,7 +35,7 @@ const Element3d = ({
         repeat: Infinity,
         repeatType: "mirror",
       }}
-      className={cn("", className)}
+      className={cn("overflow-hidden", className)}
     >
       <Image
         src={image}
