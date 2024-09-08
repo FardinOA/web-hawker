@@ -10,7 +10,6 @@ export default function Home() {
       <div className="h-dvh  "></div>
 
       <GetStarted />
-      <div className="h-dvh  "></div>
     </main>
   );
 }

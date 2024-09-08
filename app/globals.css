@@ -62,3 +62,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.section_gap {
+  @apply py-10 lg:py-2 mt-10 lg:mt-20;
+}
+
+.brand-shadow {
+  box-shadow: 0px -5px 46px -10px #5c38cf;
+}
