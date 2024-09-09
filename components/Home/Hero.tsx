@@ -6,6 +6,7 @@ import { motion, useScroll } from "framer-motion";
 import { Spotlight } from "../ui/Spotlight";
 import WebService from "@/animations/webService.json";
 import Lottie from "react-lottie";
+import SparklesText from "../ui/sparkleText";
 const Hero = () => {
   const contactRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -61,11 +62,12 @@ const Hero = () => {
         />
 
         <div className="space-y-3 px-4   ">
-          <h1 className=" text-4xl text-center   2xl:text-5xl  ">
+          <SparklesText />
+          {/* <h1 className="  text-4xl text-center   2xl:text-5xl ">
             Your <span className="text-primary">Vision</span>, Our Code{" "}
             <br className="md:hidden" />- Let&apos;s Build{" "}
             <span className="text-primary">Together</span>!
-          </h1>
+          </h1> */}
 
           <h2 className="text-center lg:text-base tracking-wider text-gray-400 ">
             Empowering Your Business with Innovative Web Solutions that Drive
@@ -73,12 +75,14 @@ const Hero = () => {
           </h2>
         </div>
         <div className="flex items-center justify-center">
+          {/* <CoolMode> */}
           <Button
             size={"xl"}
-            className="tracking-wider shadow-xl shadow-primary/50 rounded-xl"
+            className=" shadow-[6px_6px_0px_0px_#5E3BD0]   tracking-wider   shadow-primary/50 rounded-xl"
           >
             Let’s Create Magic Together!
           </Button>
+          {/* </CoolMode> */}
         </div>
       </div>
     </section>

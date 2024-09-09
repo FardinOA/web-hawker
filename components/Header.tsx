@@ -7,7 +7,7 @@ const Header = () => {
   const links = [
     {
       title: "Services",
-      url: "#",
+      url: "#services",
     },
     {
       title: "Blog",
@@ -15,13 +15,13 @@ const Header = () => {
     },
     {
       title: "Contact",
-      url: "#",
+      url: "/contact",
     },
   ];
   return (
     <header className="py-3 shadow sticky top-0 left-0 z-10 bg-white/50 backdrop-blur-md ">
       <div className="flex justify-between items-center container">
-        <div>
+        <Link href={`/`}>
           <Image
             src={`/images/wh_logo.png`}
             width={100}
@@ -32,11 +32,11 @@ const Header = () => {
             alt="Logo"
             className="object-contain"
           />
-        </div>{" "}
-        <nav className=" hidden md:flex gap-4 text-lg items-center">
+        </Link>{" "}
+        <nav className=" hidden md:flex gap-4 xl:gap-6 text-lg items-center">
           {links?.map((link) => (
             <Link
-              className=" hover:text-primary "
+              className=" hover:text-primary relative group "
               href={link.url}
               key={link.title}
             >
