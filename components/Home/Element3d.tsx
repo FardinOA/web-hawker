@@ -43,7 +43,7 @@ const Element3d = ({
         height={80}
         sizes="100"
         alt="3d shape"
-        className="   object-contain"
+        className=" lg:size-[100px]  object-contain"
       />
     </motion.div>
   );

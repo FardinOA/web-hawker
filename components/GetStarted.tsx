@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "./ui/button";
+import { buttonVariants } from "./ui/button";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const GetStarted = () => {
   return (
@@ -39,12 +41,18 @@ const GetStarted = () => {
             </p>
 
             <div className="flex justify-center pt-8">
-              <Button
-                className="rounded-lg bg-primary-foreground text-primary hover:bg-primary-foreground/80 "
-                size={"lg"}
+              <Link
+                href={"/contact"}
+                className={cn(
+                  buttonVariants({
+                    size: "lg",
+                    className:
+                      "rounded-lg bg-primary-foreground text-primary hover:bg-primary-foreground/80",
+                  })
+                )}
               >
                 Contact Us Now
-              </Button>
+              </Link>
             </div>
           </div>
         </div>

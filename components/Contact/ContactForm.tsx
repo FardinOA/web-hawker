@@ -15,7 +15,7 @@ const ContactForm = () => {
             {" "}
             Couldn’t find what you were looking for? Write to us at
           </p>
-          <p className="text-center font-mono"> becca@qodeinteractive.com</p>
+          <p className="text-center font-mono"> jhon@example.com</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-3xl mx-auto  ">
           <Input
