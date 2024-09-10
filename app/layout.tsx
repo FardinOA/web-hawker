@@ -3,6 +3,7 @@ import { Madimi_One } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/Utils/BackToTop";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`   ${madimi.className} antialiased  `}>
         {" "}
         <Header /> {children} <Footer />
+        <BackToTop />
       </body>
     </html>
   );
