@@ -73,8 +73,8 @@ const OurService = () => {
                     ></path>
                     <defs>
                       <linearGradient id="SvgjsLinearGradient1048">
-                        <stop stop-color="#dfe9f3" offset="0"></stop>
-                        <stop stop-color="#8fa8c9" offset="1"></stop>
+                        <stop stopColor="#dfe9f3" offset="0"></stop>
+                        <stop stopColor="#8fa8c9" offset="1"></stop>
                       </linearGradient>
                     </defs>
                   </svg>

@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <header className="py-3 shadow sticky top-0 left-0 z-10 bg-white/50 backdrop-blur-md ">
       <div className="flex justify-between items-center container">
-        <Link href={`/`}>
+        <Link aria-label="go to home" href={`/`}>
           <Image
             src={`/images/wh_logo.png`}
             width={100}
@@ -36,6 +36,7 @@ const Header = () => {
         <nav className=" hidden md:flex gap-4 xl:gap-6 text-lg items-center">
           {links?.map((link) => (
             <Link
+              aria-label={`Visit ${link.title} page`}
               className=" hover:text-primary relative group "
               href={link.url}
               key={link.title}
@@ -45,7 +46,12 @@ const Header = () => {
           ))}
         </nav>{" "}
         <div>
-          <Button className="shadow-lg shadow-primary ">Schedule a Call</Button>
+          <Button
+            aria-label="Schedule a Call"
+            className="shadow-lg shadow-primary "
+          >
+            Schedule a Call
+          </Button>
         </div>
       </div>
     </header>

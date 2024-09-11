@@ -1,6 +1,7 @@
 import { Facebook, Linkedin, Twitter } from "lucide-react";
 import React from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -28,20 +29,32 @@ const Footer = () => {
                 <h4 className="text-xl font-bold mb-4">Quick Links</h4>
                 <ul className="space-y-2 font-sans ">
                   <li>
-                    <a href="#services" className="hover:text-primary">
+                    <Link
+                      aria-label="Visit Services Page"
+                      href="#"
+                      className="hover:text-primary"
+                    >
                       Services
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="/blog" className="hover:text-primary">
+                    <Link
+                      aria-label="Visit Blog page"
+                      href="/blog"
+                      className="hover:text-primary"
+                    >
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/contact" className="hover:text-primary">
+                    <Link
+                      aria-label="Visit Contact Us page"
+                      href="/contact"
+                      className="hover:text-primary"
+                    >
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -81,18 +94,26 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <div className="flex items-center gap-3">
-            <a href="#">
-              <Button size="icon" className="">
+            <a aria-label="Visit our linkedin page" href="#">
+              <Button
+                aria-label="Visit our linkedin page"
+                size="icon"
+                className=""
+              >
                 <Linkedin className="fill-white stroke-white stroke-1" />
               </Button>
             </a>
-            <a href="#">
-              <Button size="icon" className="">
+            <a aria-label="Visit our facebook page" href="#">
+              <Button
+                aria-label="Visit our facebook page"
+                size="icon"
+                className=""
+              >
                 <Facebook className="fill-white stroke-white stroke-1" />
               </Button>
             </a>
-            <a href="#">
-              <Button size="icon" className="">
+            <a aria-label="Visit our x account" href="#">
+              <Button aria-label="Visit our x account" size="icon" className="">
                 <Twitter className="fill-white stroke-white stroke-1" />
               </Button>
             </a>

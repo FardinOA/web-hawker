@@ -31,7 +31,10 @@ const ContactForm = () => {
             placeholder="Message"
           />
           <div className="lg:col-span-2">
-            <Button className=" font-sans shadow-[6px_6px_0px_0px_#a089eb]">
+            <Button
+              aria-label="Send Message"
+              className=" font-sans shadow-[6px_6px_0px_0px_#a089eb]"
+            >
               Send Message
             </Button>
           </div>

@@ -77,6 +77,7 @@ const Hero = () => {
         <div className="flex items-center justify-center">
           {/* <CoolMode> */}
           <Button
+            aria-label="Let’s Create Magic Together!"
             size={"xl"}
             className=" shadow-[6px_6px_0px_0px_#5E3BD0]   tracking-wider   shadow-primary/50 rounded-xl"
           >
