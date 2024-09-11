@@ -23,9 +23,6 @@ const About = () => {
     <section
       style={{
         backgroundImage: "url('/images/3d7.png')",
-        backgroundSize: 1000,
-
-        backgroundBlendMode: "difference",
       }}
       className=" overflow-hidden  pt-5 lg:pt-40 2xl:pt-60 bg-no-repeat bg-contain  relative lg:h-[70vh] bg-dot-black/[.1]  "
     >
