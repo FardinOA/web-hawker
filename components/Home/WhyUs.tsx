@@ -51,7 +51,7 @@ const WhyUs = () => {
             {whyChooseUs.map((item, index) => (
               <div
                 className={cn(
-                  "  bg-white/30 rounded-lg backdrop-blur-sm p-4 lg:p-6    ",
+                  "  bg-white/30 rounded-sm backdrop-blur-sm p-4 lg:p-6 shadow-[6px_6px_0px_0px_#a089eb]   ",
                   (index == 1 || index == 3) && "lg:translate-y-10"
                 )}
                 key={`whyus-${index}`}
