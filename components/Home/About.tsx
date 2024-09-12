@@ -44,13 +44,13 @@ const About = () => {
           {data?.map((ele, ind) => (
             <div
               key={`about-${ind}`}
-              className="rounded-lg bg-white/50 backdrop-blur-sm p-4 space-y-4 lg:space-y-6 lg:p-10 grid grid-rows-subgrid row-start-1 row-end-3 "
+              className="rounded-lg bg-white/70 backdrop-blur-sm p-4 space-y-4 lg:space-y-6 lg:p-10 grid grid-rows-subgrid row-start-1 row-end-3 "
             >
               <div>
                 <p className="text-xl lg:text-2xl">{ele?.title}</p>
               </div>
               <div>
-                <p className="font-sans text-pretty text-primary ">
+                <p className="font-sans text-pretty text-black ">
                   {" "}
                   {ele.description}
                 </p>{" "}

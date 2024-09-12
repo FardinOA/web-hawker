@@ -51,14 +51,14 @@ const WhyUs = () => {
             {whyChooseUs.map((item, index) => (
               <div
                 className={cn(
-                  "  bg-white/30 rounded-sm backdrop-blur-sm p-4 lg:p-6 shadow-[6px_6px_0px_0px_#a089eb]   ",
+                  "  bg-white/50 rounded-sm backdrop-blur-sm p-4 lg:p-6 shadow-[6px_6px_0px_0px_#a089eb]   ",
                   (index == 1 || index == 3) && "lg:translate-y-10"
                 )}
                 key={`whyus-${index}`}
               >
                 <div className="space-y-4">
                   <p className="text-4xl text-black  ">{item?.title}</p>
-                  <p className="  tracking-widest font-[300] font-sans  ">
+                  <p className="  tracking-widest font-[500] font-sans  ">
                     {item?.description}
                   </p>
                 </div>
